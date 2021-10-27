@@ -1,16 +1,41 @@
 # Docs
 
-## What was done initially
+## Anaconda
+### What was done initially
 
 ```
 conda install --name tiktok python=3.8
 conda install ncurses
 ```
-## Getting Conda Started
+### Getting Conda Started
 
 ```
 conda activate tiktok
 
+```
+
+## Virtual Env
+
+### Setup python v-env
+
+```
+virtualenv -p `which python3` venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### Activating venv
+
+```
+source venv/bin/activate
+```
+
+### creating requirements.txt
+
+```
+pip install TikTokApi
+python -m playwright install
+pip freeze > requirements.txt
 ```
 
 ## Some docs
